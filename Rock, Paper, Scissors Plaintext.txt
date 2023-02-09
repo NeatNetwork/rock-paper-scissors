@@ -1,0 +1,113 @@
+# Made by NeatPlaysAlt
+# Neatnet@mail.com - [Email]
+# padlad256@gmail.com - [Alternative Email]
+# NeatPlaysAlt#0001 - [Discord]
+# @WhitakerF18 - [Instagram]
+# WhitakerF18 - [Snapchat]
+# padlad256 - [facebook]
+
+#############-----------play again dialouge--------##########
+def ask():
+    ask = input("want to play again? \n")
+    if ask.lower() == "yes":
+        startgame()
+    elif ask.lower() == "ye":
+        startgame
+    elif ask.lower() == "no":
+        exit()
+    else:
+        exit()
+ #############-----------start game dialouge--------##########       
+def startgame():
+    rps = ['rock', 'paper', 'scissors', 'scissors', 'paper', 'rock', 'paper', 'rock', 'scissors', 'rock', 'scissors', 'paper']
+    import random
+    first = random.choice(rps)
+    print("welcome to rock paper scissors")
+    score = 0
+    start = input("how many rounds do you want to play? [1 / 3 / 5] \n")
+    if start == "1":
+        choice = input("what do you choose? \n")
+        print("I choose " + str(first))
+        if choice == str(first):
+            print("you drew")
+            ask()
+        elif choice == "rock" and str(first) == "scissors":
+            print("you won!")
+            ask()
+        elif choice == "rock" and str(first) == "paper":
+            print("you lost")
+            ask()
+        elif choice == "paper" and str(first) == "scissors":
+            print("you lost")
+            ask()
+        elif choice == "paper" and str(first) == "rock":
+            print("you won!")
+            ask()
+        elif choice == "scisors" and str(first) == "paper":
+            print("you won!")
+            ask()
+        elif choice == "scisors" and str(first) == "rock":
+            print("you lost")
+            ask()
+    elif start == "3":
+        for rps in range(3):
+            choice = input("what do you choose? \n")
+            print("I choose " + str(first))
+            if choice == str(first):
+                print("you drew")
+                ask()
+            elif choice == "rock" and str(first) == "scissors":
+                print("you won!")
+                ask()
+            elif choice == "rock" and str(first) == "paper":
+                print("you lost")
+                ask()
+            elif choice == "paper" and str(first) == "scissors":
+                print("you lost")
+                ask()
+            elif choice == "paper" and str(first) == "rock":
+                print("you won!")
+                ask()
+            elif choice == "scisors" and str(first) == "paper":
+                print("you won!")
+                ask()
+            elif choice == "scisors" and str(first) == "rock":
+                print("you lost")
+                ask()
+    elif start == "5":
+        for rps in range(5):
+            choice = input("what do you choose? \n")
+            print("I choose " + str(first))
+            if choice == str(first):
+                print("you drew")
+                ask()
+            elif choice == "rock" and str(first) == "scissors":
+                print("you won!")
+                ask()
+            elif choice == "rock" and str(first) == "paper":
+                print("you lost")
+                ask()
+            elif choice == "paper" and str(first) == "scissors":
+                print("you lost")
+                ask()
+            elif choice == "paper" and str(first) == "rock":
+                print("you won!")
+                ask()
+            elif choice == "scisors" and str(first) == "paper":
+                print("you won!")
+                ask()
+            elif choice == "scisors" and str(first) == "rock":
+                print("you lost")
+                ask()
+    else:
+        exit()
+#############-----------start of program--------##########
+startgame()09:16 09/02/2023
+
+# Made by NeatPlaysAlt
+# Neatnet@mail.com - [Email]
+# padlad256@gmail.com - [Alternative Email]
+# NeatPlaysAlt#0001 - [Discord]
+# @WhitakerF18 - [Instagram]
+# WhitakerF18 - [Snapchat]
+# padlad256 - [facebook]
